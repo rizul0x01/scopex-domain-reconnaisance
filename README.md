@@ -65,7 +65,7 @@ chmod +x main.py
 - `beautifulsoup4` - HTML parsing
 - `pyyaml` - YAML configuration support
 - `colorama` - Terminal colors
-- `shodan` - Shodan API integration (optional)
+- `shodan` - Shodan API integration
 
 ## Usage
 
