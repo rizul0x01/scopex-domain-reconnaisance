@@ -37,11 +37,11 @@ SCOPEX is a comprehensive, CLI-based domain reconnaissance tool designed specifi
 ```bash
 # To set up the project, follow these steps:
 
-# Extract the archive:
-tar -xzf scopex.tar.gz
+# Clone the repository:
+git clone https://github.com/rizul0x01/scopex-domain-reconnaisance.git ScopeX
 
 # Clone or download the scopex directory
-cd scopex
+cd ScopeX
 
 # Install dependencies: It is highly recommended to use a Python virtual environment to avoid conflicts with your system's Python packages.
 
