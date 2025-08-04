@@ -1,0 +1,54 @@
+# Author: rizul0x01
+# SCOPEX Configuration File
+# User-tunable settings for reconnaissance modules
+
+# General settings
+general:
+  timeout: 10  # Default timeout for HTTP requests
+  retries: 3   # Number of retry attempts
+  delay: 1.0   # Delay between requests (seconds)
+  
+# Subdomain enumeration settings
+subdomain_enum:
+  max_subdomains: 1000  # Maximum subdomains to process
+  dns_brute_wordlist_size: 100  # Number of common subdomains to brute force
+  validate_subdomains: true  # Validate subdomains via DNS resolution
+  
+# DNS resolution settings
+dns:
+  timeout: 5  # DNS query timeout
+  lifetime: 10  # DNS query lifetime
+  
+# Certificate inspection settings
+certificates:
+  port: 443  # Default SSL port
+  max_subdomains_to_check: 5  # Limit subdomain certificate checks
+  
+# HTTP request settings
+http:
+  user_agent_rotation: true  # Rotate user agents
+  follow_redirects: true
+  verify_ssl: false  # Don't verify SSL for reconnaissance
+  
+# API keys (optional)
+api_keys:
+  shodan: ""  # Shodan API key for enhanced reconnaissance
+  virustotal: ""  # VirusTotal API key
+  censys: ""  # Censys API key
+  
+# Plugin settings
+plugins:
+  enabled: true
+  timeout: 30  # Plugin execution timeout
+  
+# Output settings
+output:
+  json_indent: 2  # JSON report indentation
+  include_raw_data: false  # Include raw API responses
+  
+# Stealth settings
+stealth:
+  random_delays: true  # Add random delays between requests
+  min_delay: 0.5
+  max_delay: 2.0
+
